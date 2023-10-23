@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --custom-green: #0B7063;
+    --custom-light-green: #41bb81;
+    --custom-gray: #F8FAFC;
+    --custom-white: #FFFFFF;
+    --custom-black: #000000;
+    --custom-light-black: #212529;
+    --custom-red: red
+}
+
+
+html, *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* transition: color 0.5s; */
+    scroll-behavior: smooth;
+}
+
+
+/* INICIO EFEITOS TEMPORATIOS - BOTAO INICIO */
+.estruturaSite {
+    display: none;
+}
+/* FIM EFEITOS TEMPORATIOS - BOTAO INICIO */
+
+body{
+    background-color: var(--custom-white);
+
+}
+
+/* HEADER */
+header{
+    background-color: var(--custom-gray);
+    height: 100vh;
+    display: flex;
+}
+    header .row{
+        height: 100%;
+    }
+
+    header img{
+        width: 40vmax;
+        margin-left: 5vw !important;
+        -webkit-filter: drop-shadow(20px 20px 60px #bebebe);
+        filter: drop-shadow(20px 20px 60px #bebebe);
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+        margin: 0 auto 0 auto;
+        transform-origin: bottom;
+
+        animation-name: bounce-1;
+        animation-timing-function: ease-in-out;
+    }
+        @keyframes bounce-1 {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        header .display-1{
+            color:#0B7063;
+            font-size: 5rm;
+            font-weight: 600;
+        }
+/* HEADER */
+
+
+/* NAV */
+nav{
+    background-color: var(--custom-white);
+    padding: 5px 0 5px 30px;
+}
+    .nav-link{
+        color: var(--custom-green) !important;
+        cursor: pointer;
+    }
+        .nav-link:hover{
+            color:var(--custom-light-green) !important;  
+        }
+    
+    .nav-item .active {
+        /* Your active link styling */
+    }
+/* NAV */
+
+
+/* CONTEUDO */
+main{
+    padding: 5vh 5vw 0 5vw;
+    padding-bottom: 0 !important;
+}
+    main .display-4, main h3{
+        font-weight: 600;
+        color: var(--custom-green);
+
+        margin-bottom: 10px;
+    }
+    main .display-4 {
+        margin-top: 3vh;
+    }
+    main h4{
+        color: var(--custom-green);
+    }
+    main h5 {
+        margin-top: 5vh;
+        color: var(--custom-green);
+    }
+    main p{
+        font-size: 1.2rem;
+        font-weight: 300;
+
+        text-align: justify;
+    }
+
+    .collapse img{
+        max-width: 80vw;
+        max-height: 500px;
+    }
+
+    #inputVehicleMakerTemplate:last-child, #inputVehicleTemplate:last-child{
+        display: none;
+    }
+    
+section{
+    padding: 8vh 5vw 0 5vw;
+    background-color: var(--custom-green);
+    color: var(--custom-white) !important;
+}
+    section .container{
+        padding: 0 !important;
+    }
+    section .display-4{
+        font-weight: 600;
+
+        margin-bottom: 10px;
+    }
+
+    section h3{
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+    section p{
+        font-size: 1.2rem;
+
+        text-align: justify;
+    }
+
+    section label{
+        margin-top: 2vh;
+        margin-right: 1vw;
+    }
+ 
+    .formTitle h4 {
+        margin-left: 10px;
+    }
+    
+    form button{
+        margin-top: 2vh ;
+    }
+
+
+
+
+
+.modal {
+    color: var(--custom-black);
+}
+
+    #resultText {
+        text-align: justify;
+        
+    }
+    .modal-title {
+        color: var(--custom-green);
+    }
+
+
+#EmissaoCarbonoVehicleForm, #EmissaoCarbonoVehicleTitulo {
+    display:flex;
+}
+#EmissaoCarbonoEntregaForm, #EmissaoCarbonoEntregaTitulo, #EmissaoCarbonoCombustivelForm, #EmissaoCarbonoVooForm, #EmissaoCarbonoCombustivelTitulo, #EmissaoCarbonoVooTitulo {
+    display: none;
+}
+
+
+
+.btnCuriosidades{
+    display: flex;
+    margin-top: 3vh;
+    justify-content: center;
+}
+.btnCuriosidades button:hover{
+    background-color: var(--custom-green);
+}
+
+#CuriosidadeContent {
+    min-height: 7vh;
+    background-color: var(--custom-green);
+    color: var(--custom-white);
+    border-radius: 10px;
+} 
+
+#CuriosidadeContentP {
+    font-size: 1.3em;
+}
+
+
+/* TRIVIA */
+#TriviaLeaderboard h1{
+    color: var(--custom-red);
+}
+#TriviaProgressbarDiv{
+    display: none;
+}
+#TriviaTimerDiv{
+    display: none;
+}
+#TriviaTimer {
+    background-color: green;
+}
+
+
+#TriviaLeaderboardRowTemplate:last-child{
+    display: none;
+}
+
+#resultHeader{
+    margin-top: 1vh;
+}
+
+.TriviaAlternativas {
+    display: none ;
+}
+
+#TriviaAnchor{
+    
+}
+
+
+/* ARTICLES */
+#articleCardTemplate:first-child{
+    display: none;
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+.container-fluid .row {
+    margin-left: 0 ;
+}
+.scrolling-wrapper{
+	overflow-x: auto;
+    width: 100%;
+    padding: 0 !important;
+}
+
+.card-custom {
+    overflow: hidden;
+    margin-top: 2vh;
+    min-height: 300px;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    }
+
+    .card-custom svg{
+        position: absolute;
+        color: var(--custom-gray);
+        margin: 10px;
+        right: 0;
+    }
+    .card-text {
+        overflow-y: auto;
+        max-height: 200px;
+        text-align:left;
+    }
+    
+    .card-custom-img {
+        height: 200px;
+        min-height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-color: inherit;
+    }
+    .card-custom .card-footer{
+        justify-content: space-between;
+        display: flex;
+    }
+        .card-custom .card-footer p{
+            margin: 0;
+        }
+
+
+
+/* CURIOSIDADES */
+.accordion {
+    transition: ease-in-out 2s;
+}
+.accordion-item:first-child{
+    display: none;
+}
+/* CURIOSIDADES */
+    
+
+
+
+footer{
+    margin-top: 5vh;
+    border-radius: 20px 20px 0 0;
+    background-color: #EEF0F0;
+    margin-top: 15vh 
+}
+
+    footer .container{
+        margin-top: 3vh;
+    }
+
+    footer a:hover{
+        color: var(--custom-light-green) !important;
+    }
+
+
+
+#TriviaContainer, #TriviaLeaderboard{
+    display: none ;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 3vh !important;
+    /* color: var(--custom-white) !important; */
+}
+    #TriviaContainer h4{
+        /* color: var(--custom-white) !important; */
+    }

@@ -1,0 +1,43 @@
+.btnVoltar {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+
+    background-color: #0B7063;
+    color: #FFFFFF;
+
+    padding: 10px;
+
+    z-index: 1;
+}
+
+header {
+    height: 80vh;
+}
+
+main {
+    background-color: #FFFFFF;
+    border-radius:70px 70px 0 0 ;
+}
+.topico {
+    padding-top: 5vh;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
